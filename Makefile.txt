@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -g
-OBJ = main.o usuarios.o productos.o
+OBJ = Main.o usuarios.o productos.o
 EXE = Sistema
 
 all: $(EXE)
@@ -8,8 +8,8 @@ all: $(EXE)
 $(EXE): $(OBJ)
 	$(CC) $(CFLAGS) -o $(EXE) $(OBJ)
 
-main.o: main.c usuarios.h productos.h
-	$(CC) $(CFLAGS) -c main.c
+Main.o: Main.c usuarios.h productos.h
+	$(CC) $(CFLAGS) -c Main.c
 
 usuarios.o: usuarios.c usuarios.h
 	$(CC) $(CFLAGS) -c usuarios.c
