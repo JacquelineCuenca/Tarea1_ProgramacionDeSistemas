@@ -46,10 +46,11 @@ int main() {
         return 1;
     }
 
-    char fecha[11];
+    char fecha[20];
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
     sprintf(fecha, "%04d-%02d-%02d", tm.tm_year+1900, tm.tm_mon+1, tm.tm_mday);
+
 
     while (continuar == 's') {
         printf("Codigo de producto: ");
