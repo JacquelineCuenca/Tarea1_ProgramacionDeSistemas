@@ -2,11 +2,10 @@
 #define USUARIOS_H
 
 typedef struct {
-    int id;
+    char usuario[30];
+    char clave[30];
     char nombre[50];
-    char clave[20];
 } Usuario;
-
 
 int login(Usuario *usuarios, int numUsuarios);
 
