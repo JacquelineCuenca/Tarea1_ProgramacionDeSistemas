@@ -3,11 +3,12 @@
 
 typedef struct {
     int codigo;
-    char nombre[50];
     int cantidad;
     float costo;
     float precioVenta;
+    char nombre[50];
 } Producto;
+
 
 int cargarProductos(Producto **productos);
 int actualizarInventario(Producto *productos, int numProductos);
